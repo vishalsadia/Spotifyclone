@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+}
+.left-main{
+    flex: 1;
+    background-color: rgb(0,0,0);
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.right-main{
+    flex: 4;
+    background-color: rgb(34,34,34);
+    overflow-y: scroll;
+}
+.footer{
+    height: 12vh;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(24,24,24);
+    width: 100%;
+    box-shadow: 0px 0px 10px gray;
+}
+.main-logo>img{
+    width: 110%;
+    height: 80px;
+    padding-top: 20px;
+    margin-bottom: 6vh;
+}
+.main-navtag{
+    margin-left: 20px;
+    line-height: 6vh;
+    font-family: DM Sans;
+    font-size: 120%;
+    font-weight: 700;
+    margin-bottom: 25%;
+}
+.main-navtag>div>a{
+    text-decoration: none;
+    color: white;
+}
+.songs-navigation{
+    margin-left: 20px;
+    line-height: 6vh;
+    font-family: DM Sans;
+    font-size: 120%;
+    font-weight: 700;
+    margin-bottom: 25%;
+}
+.songs-navigation>div>a{
+    text-decoration: none;
+    color: white;
+}
+.plus-sign{
+    background-color: white;
+}
+.other-navtag{
+    margin-left: 20px;
+    line-height: 6vh;
+    font-family: DM Sans;
+    font-size: 120%;
+    font-weight: 700;
+    margin-bottom: 25%;
+}
+.other-navtag>div>a{
+    text-decoration: none;
+    color: white;
+}
+.install-app{
+    margin-left: 20px;
+    line-height: 6vh;
+    font-family: DM Sans;
+    font-size: 120%;
+    font-weight: 700;
+    margin-bottom: 20%;
+}
+.install-app>img{
+    margin-right: 1vw;
+}
+.install-app>a{
+    text-decoration: none;
+    color: white !important;
+}
+.img{
+    width: 15%;
+    margin-right: 1vw;
+}
+.hover:hover{
+    background-color: rgb(34,34,34);
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-left: 15px;
+}
+.text{
+    margin-left: 20px;
+    margin-top: 3%;
+    margin-bottom: 20px;
+}
+h1{
+    color: white;
+    font-family: DM Sans;
+    font-size: 38px;
+    font-weight: 700;
+}
+.basic:hover{
+    background-color: rgb(48,48,48);
+    border-radius: 5px;
+    color: white;
+}
+.basic>a{
+    text-decoration: none;
+    color: white !important;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 700;
+}
+.basic>img{
+    margin-right: 5%;
+}
+.edit{
+    margin-right: 5%;
+}
+.list-details{
+    color: white;
+    margin-inline: 2%;
+}
+.list-details>a{
+    color: white !important;
+    text-decoration: none;
+}
+.shows-card{
+    background-color: rgb(24,24,24) !important;
+}
+.imgs{
+    padding: 8%;
+}
+.title-prop{
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 21px;
+    font-weight: 500;
+}
+span{
+    border-radius: 45%;
+    background-color: rgb(24,24,24);
+    text-align: center;
+    margin-inline: 10px;
+    box-sizing: border-box;
+}
+span>a>img{
+    width: 30px;
+}
+
+.user{
+    border-radius: 30px;
+    background-color: rgb(24,24,24);
+    padding-inline: 15px;
+    padding-block: 5px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.user>a{
+    color: white !important;
+    text-decoration: none;
+}
+.footer{
+    padding-inline: 2%;
+    margin-top: 5px;
+}
+.trans{
+    transition: all 0.5s ease;
+    margin-bottom: 2%;
+}
+.trans:hover{
+    transform: scale(1.02);
+}
+
+@media screen and (max-width: 992px){
+    .right{
+        display: none;
+    }
+    .main-navtag{
+        white-space: nowrap;
+    }
+    .songs-navigation{
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 768px) {
+    .right{
+        display: none;
+    }
+    .title{
+        display: none;
+    }
+    .player>img{
+        width: 100%;
+    }
+    .main-navtag{
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+    .songs-navigation{
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+    .other-navtag{
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+    .install-app{
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+}

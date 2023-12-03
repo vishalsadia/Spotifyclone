@@ -1,0 +1,276 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+}
+.left-main{
+    flex: 1;
+    background-color: rgb(0,0,0);
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.right-main{
+    flex: 4;
+    background-color: rgb(34,34,34);
+    overflow-y: scroll;
+}
+.footer{
+    height: 12vh;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(24,24,24);
+    width: 100%;
+    box-shadow: 0px 0px 10px gray;
+}
+.main-logo>img{
+    width: 110%;
+    height: 80px;
+    padding-top: 20px;
+    margin-bottom: 6vh;
+}
+.main-navtag{
+    margin-left: 20px;
+    line-height: 6vh;
+    font-family: DM Sans;
+    font-size: 120%;
+    font-weight: 700;
+    margin-bottom: 25%;
+}
+.main-navtag>div>a{
+    text-decoration: none;
+    color: white;
+}
+.hover:hover{
+    background-color: rgb(34,34,34);
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-left: 15px;
+}
+.img{
+    width: 15%;
+    margin-right: 1vw;
+}
+.songs-navigation{
+    margin-left: 20px;
+    line-height: 6vh;
+    font-family: DM Sans;
+    font-size: 120%;
+    font-weight: 700;
+    margin-bottom: 70%;
+}
+.songs-navigation>div>a{
+    text-decoration: none;
+    color: white;
+}
+.plus-sign{
+    background-color: white;
+}
+.playlists{
+    color: #B3B3B3;
+    font-family: Circular Std;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.sweet-img{
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+}
+.right-main{
+    background: linear-gradient(180deg, #90AEA7 0%, #000 100%);
+}
+.first-part{
+    display: flex;
+    border-bottom: 0px solid rgb(34,34,34);
+    box-shadow: 0px 0px 4px black;
+    position: sticky;
+    top: -12vh;
+    background: linear-gradient(180deg, #90AEA7 0%, #000 100%);
+}
+.heroine{
+    padding-top: 5%;
+}
+.details{
+    color: #FFF;
+    font-family: Circular Std;
+    padding-top: 10%;
+}
+.heading{
+    font-size: 80px;
+}
+.texts{
+    font-size: 16px;
+}
+.second-part{
+    padding-left: 3%;
+    padding-block: 3%;
+    border-bottom: 0px solid rgb(34,34,34);
+    box-shadow: 0px 0px 4px black;
+}
+.dots>a{
+    text-decoration: none;
+    color: white !important;
+    font-weight: 400;
+}
+.third-part{
+    margin-top: 10px;
+}
+.hash{
+    margin-right: 5vw;
+}
+.title-sign{
+    margin-right: 20vw;
+    font-family: Circular Std;
+    font-size: 15px;
+    font-weight: 400;
+}
+.album-sign{
+    margin-right: 17vw;
+    font-family: Circular Std;
+    font-size: 15px;
+    font-weight: 400;
+}
+.date-sign{
+    font-family: Circular Std;
+    font-size: 15px;
+    font-weight: 400;
+}
+.song-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.arrow{
+    margin-left: 0.5vw;
+    margin-right: 1.5vw;
+}
+.song-img{
+    margin-right: 1.5vw;   
+}
+.song-name{
+    margin-right: 8vw;
+    font-family: Circular Std;
+}
+.album-name{
+    margin-right: 9vw;
+    font-family: Circular Std;
+}
+.date-added{
+    margin-right: 12vw;
+    font-family: Circular Std;
+}
+.dotsm{
+    font-size: 30px;
+}
+.heart-sm{
+    margin-right: 2vw;
+}
+.time{
+    margin-right: 1vw;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Circular Std;
+}
+.basic-detail{
+    display: flex;
+    align-items: first baseline;
+    justify-content: baseline !important;
+}
+.extra{
+    margin-left: 3.5vw;
+}
+.basic-details{
+    display: flex;
+    align-items: first baseline;
+    justify-content: flex-end;
+}
+.footer{
+    padding-inline: 2%;
+    margin-top: 5px;
+}
+@media screen and (max-width: 992px){
+    .right{
+        display: none;
+    }
+    .basic-detail{
+        display: none;
+    }
+    .extra{
+        display: none;
+    }
+    .main-navtag{
+        white-space: nowrap;
+    }
+    .songs-navigation{
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 768px) {
+    .right{
+        display: none;
+    }
+    .title{
+        display: none;
+    }
+    .player>img{
+        width: 100%;
+    }
+    .heroine>img{
+        width: 76% !important;
+    }
+    .details{
+        width: 40vw;
+        height: 50vh;
+    }
+    .texts{
+       font-size: 1rem;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .basic-detail{
+        display: none;
+    }
+    .extra{
+        display: none;
+    }
+    .arrow{
+        display: none;
+    }
+    .date-added{
+        display: none;
+    }
+    .album-name{
+        display: none;
+    }
+    .song-part{
+        width: 100%;
+    }
+    .date-sign{
+        display: none;
+    }
+    .album-sign{
+        display: none;
+    }
+    .main-navtag{
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+    .songs-navigation{
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+}
